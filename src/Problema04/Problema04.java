@@ -2,6 +2,7 @@ package Problema04;
 
 public class Problema04 {
     public static void main(String[] args){
+        //Evalua si un numero es capicua
         String numero;
         int posicion;
         numero = "1121";

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Problema12 {
     public static void main(String[] args) {
+        //Busca si un caracter ingresado por el usuario dentro de un arreglo de caracteres
         Scanner sc = new Scanner(System.in);
         char[] arreglo = {'a','b','c','d','e'};
         int longitud = arreglo.length-1;
