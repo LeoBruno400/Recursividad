@@ -47,6 +47,4 @@ public class Problema11 {
         }
         return contadorImpar;
     }
-
-
 }
