@@ -7,7 +7,18 @@ public class Problema09 {
         System.out.println(divisionPorResta(divisor, dividendo));
     }
 
-    public static int divisionPorResta(int divisor, int dividendo){
-        
+    public static int divisionPorResta(int divisor, int dividendo) {
+        int resta;
+        int cociente = 0;
+
+        if (dividendo > divisor) {
+            resta = dividendo - divisor;
+            //Cociente: suma 1 por cada vez que se realice la resta
+            cociente = 1 + divisionPorResta(divisor, resta);
+        } else {
+            //Caso base: devuelve 0 y se suma con los valores accareados
+            cociente = 0;
+        }
+        return cociente;
     }
 }
