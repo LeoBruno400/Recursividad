@@ -12,7 +12,11 @@ public class Problema12 {
         System.out.println("Ingrese el caracter que desea buscar: ");
         caracterBuscado = sc.next().charAt(0);
 
-        System.out.println(encontrarCaracter(arreglo, longitud, caracterBuscado));
+        if(encontrarCaracter(arreglo, longitud, caracterBuscado)==true){
+            System.out.println("El caracter se encuentra en el arrelgo");
+        }else{
+            System.out.println("El caracter no se encuentra en el arrelgo");
+        }
         sc.close();
     }
     public static boolean encontrarCaracter(char[] arreglo, int longitud, char caracterBuscado){
