@@ -18,10 +18,10 @@ public class Problema05 {
     public static int esMultiplo(int num) {
         int numeroEvaluar, contador = 0, aux = 0;
         numeroEvaluar = num % 10;
-        //Caso Base: cuando el num sea 0
+        // Caso Base: cuando el num sea 0
         if (num > 0) {
             if (numeroEvaluar % 3 == 0) {
-                aux ++;
+                aux++;
             }
             contador = aux + esMultiplo(num / 10);
         }

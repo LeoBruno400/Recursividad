@@ -2,7 +2,7 @@ package Problema11;
 
 public class Problema11 {
     public static void main(String[] args) {
-        //Suma los valores de las posiciones pares e impares de manera separada
+        // Suma los valores de las posiciones pares e impares de manera separada
         int[] arreglo = { 2, 1, 2, 1, 2, 1 };
         int i = 0;
         int longitud = arreglo.length - 1;

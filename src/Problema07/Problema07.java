@@ -21,10 +21,10 @@ public class Problema07 {
                 suma = matriz[filas][columnas - 1];
             }
 
-            if(columnas==0){
-                System.out.println(filas+1+"-> "+suma);
+            if (columnas == 0) {
+                System.out.println(filas + 1 + "-> " + suma);
                 filas++;
-                suma+=sumarMatriz(matriz, filas, 0);
+                suma += sumarMatriz(matriz, filas, 0);
             }
         }
         return suma;

@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Problema10 {
     public static void main(String[] args) {
-        //Forma una palabra por caracteres hasta que se ingrese un punto, retorna la palabra completa
+        // Forma una palabra por caracteres hasta que se ingrese un punto, retorna la
+        // palabra completa
         String cadena = " ";
         System.out.println("La palabra formada es: " + contarPalabra(cadena));
     }
