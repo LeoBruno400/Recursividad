@@ -2,6 +2,7 @@ package Problema13;
 
 public class Problema13 {
     public static void main(String[] args) {
+        //Busca el numero mas grande en una matriz
         int filas = 0;
         int[][] matriz = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
         System.out.println("La matriz es:");
@@ -23,14 +24,16 @@ public class Problema13 {
     }
 
     public static int mayorNumero(int[][] matriz, int filas, int columnas) {
+        //Busca el mayor en una fila
         int mayor = 0;
         int casoBase;
         int valorIncial;
 
         if (columnas >= 0 && columnas < matriz[0].length) {
-            valorIncial = matriz[filas][columnas];
-            casoBase = mayorNumero(matriz, filas, columnas + 1);
+            valorIncial = matriz[filas][columnas]; //El primer numero por el cual voy a comparar el resto
+            casoBase = mayorNumero(matriz, filas, columnas + 1); //Caso iterativo: cuando ya recorra todas las columnas
 
+            //Evalua cual numero es mas grande
             if (valorIncial < casoBase) {
                 mayor = casoBase;
             } else {
@@ -41,13 +44,17 @@ public class Problema13 {
     }
 
     public static int mayorEnMatriz(int[][] matriz, int filas){
+        //Busco el mayor de la matriz
         int mayorEnFila;
         int mayorNextLine;
         int masGrande = 0;
 
         if(filas>=0 && filas<matriz.length){
+            //Solo itero las filas, esta condicion restringe pasarse del limite
             mayorEnFila = mayorNumero(matriz, filas, 0);
             mayorNextLine = mayorEnMatriz(matriz, filas+1);
+            //Busco el mayor de las filas
+            //Evaluo cual numero de las filas es el mas grande entre ellas
             if(mayorEnFila>mayorNextLine){
                 masGrande = mayorEnFila;
             }else{
