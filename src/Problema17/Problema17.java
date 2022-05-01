@@ -16,7 +16,7 @@ public class Problema17 {
             // Caso iterativo: convierto la cadena en int y le resto 1
             // Esto lo hago asi para ir sumandolos en la variable nueva de tipo
             // string(numIngresado)
-            numIngresado += piramideNumerosDecrecientes(Integer.parseInt(numIngresado) - 1);
+            numIngresado += " " + piramideNumerosDecrecientes(Integer.parseInt(numIngresado) - 1);
             System.out.println(numIngresado);
         }
         return numIngresado;
