@@ -2,7 +2,7 @@ package Problema17;
 
 public class Problema17 {
     public static void main(String[] args) {
-        int numero = 5;
+        int numero = 9;
         piramideNumerosDecrecientes(numero);
     }
 
