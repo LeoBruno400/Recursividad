@@ -11,8 +11,10 @@ public class Problema08 {
         palabra = sc.nextLine();
         palabra = palabra.replaceAll(" ", "");
         palabra = palabra.toLowerCase();
+
         int der = palabra.length() - 1;
         int izq = 0;
+        
         System.out.println(verificacionPalabra(palabra, izq, der));
         sc.close();
     }
